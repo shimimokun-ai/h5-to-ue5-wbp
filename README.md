@@ -1,5 +1,7 @@
 # H5 to UE5 WBP
 
+**简体中文** | [English](README.en.md)
+
 将 HTML / CSS / JavaScript 界面参考还原为原生、可编辑的 Unreal Engine 5 UMG Widget Blueprint 的 Codex Skill。
 
 This Codex skill guides the conversion of an HTML/CSS/JavaScript UI reference into an editable, native Unreal Engine 5 UMG Widget Blueprint. It covers layout, assets, interaction states, project integration, DPI, animation, and evidence-based validation.
