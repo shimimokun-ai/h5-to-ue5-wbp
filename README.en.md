@@ -1,23 +1,28 @@
-# H5 to UE5 WBP
+<h1 align="center">H5 → UE5 WBP</h1>
 
-[简体中文](README.md) | **English**
+<p align="center">
+  <strong>Bring your web UI into Unreal. Keep it native. Keep it editable.</strong><br>
+  <sub>An H5 → UMG workflow for Codex · Layout · Interaction · Visual detail</sub>
+</p>
 
-A Codex skill for recreating HTML/CSS/JavaScript UI references as native, editable Unreal Engine 5 UMG Widget Blueprints.
+<p align="center">
+  <a href="README.md"><img src="docs/assets/lang-zh.svg" alt="阅读简体中文版" width="116" height="32"></a>
+  &nbsp;
+  <a href="README.en.md"><img src="docs/assets/lang-en-active.svg" alt="English · Current language" width="116" height="32"></a>
+</p>
 
-Here, **H5** refers to an HTML/CSS/JavaScript interface used as a reference for appearance and behavior. The skill covers layout, assets, interaction states, project integration, DPI, animation, and validation based on the evidence collected.
+<p align="center">
+  <a href="#quick-start">Quick start</a> &nbsp;·&nbsp;
+  <a href="#use-cases">Use cases</a> &nbsp;·&nbsp;
+  <a href="#usage-examples">Examples</a> &nbsp;·&nbsp;
+  <a href="#file-structure">Documentation</a>
+</p>
 
-## Use cases
+<p align="center">
+  <img src="docs/assets/readme-banner.svg" alt="Workflow illustration: a web UI reference becomes a native UMG interface with an editable widget hierarchy." width="100%">
+</p>
 
-- Recreate a UE5 interface from H5 source while keeping its layout and styling editable in the WBP Designer.
-- Refine an existing UMG interface to match a reference and diagnose rounded corners, alpha fringes, blur, scrolling, DPI, and animation issues.
-- Connect the interface to the project's existing C++, Blueprint, or TS/PuerTS data and interaction logic.
-- Report source inspection, compilation, saved assets, runtime checks, and user visual acceptance as separate levels of evidence.
-
-This repository provides instructions and reference material for Codex. It is not an Unreal Engine plugin or a one-click converter that works without project-specific adaptation. Native UMG is the default; embedding a Web Browser widget is considered only when explicitly requested.
-
-## Installation
-
-### Install through Codex
+## Quick start
 
 Enter the following in Codex:
 
@@ -27,7 +32,8 @@ https://github.com/shimimokun-ai/h5-to-ue5-wbp.
 Path within the repository: skills/h5-to-ue5-wbp
 ```
 
-### Manual installation
+<details>
+<summary><strong>Manual installation and updates</strong></summary>
 
 Download or clone this repository, then copy the entire `skills/h5-to-ue5-wbp` folder into your Codex skills directory.
 
@@ -36,6 +42,16 @@ Download or clone this repository, then copy the entire `skills/h5-to-ue5-wbp` f
 - If `CODEX_HOME` is set: use `skills/h5-to-ue5-wbp` inside that directory.
 
 Keep the `agents` and `references` subdirectories. If a skill with the same name already exists at the destination, review any local changes before deciding whether to update it.
+
+</details>
+
+## Use cases
+
+| Editable layout | Native interaction | Verifiable results |
+| :--- | :--- | :--- |
+| Recreate an HTML/CSS/JavaScript reference in UMG, with layout and styling you can adjust in the WBP Designer. | Connect existing C++, Blueprint, or TS/PuerTS logic while preserving real data, input, and navigation. | Report source, compilation, saved assets, runtime checks, and user visual acceptance separately. |
+
+The skill also helps refine existing UMG interfaces, with guidance for rounded corners, alpha fringes, blur, scrolling, DPI, and animation. **H5** refers to an HTML/CSS/JavaScript interface used as a reference for appearance and behavior.
 
 ## Usage examples
 
@@ -83,6 +99,8 @@ skills/h5-to-ue5-wbp/
 - [Validation and delivery](skills/h5-to-ue5-wbp/references/validation-and-delivery.md): levels of evidence, runtime checks, and scoped delivery.
 
 ## Requirements and validation scope
+
+This repository provides instructions and reference material for Codex. It is not an Unreal Engine plugin or a one-click converter that works without project-specific adaptation. Native UMG is the default; embedding a Web Browser widget requires an explicit request. The header graphic illustrates the workflow.
 
 An actual conversion requires accessible H5 source, the target Unreal project, and the editing and build capabilities needed for the task. Use the Unreal Engine version and workflow established by the target project.
 

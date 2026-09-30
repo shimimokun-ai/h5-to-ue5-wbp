@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="272" viewBox="0 0 1100 272" role="img" aria-labelledby="title desc">
+  <title id="title">From web reference to editable Unreal UI</title>
+  <desc id="desc">A schematic web interface connects to a native UMG designer with an editable widget tree.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#101d30"/>
+      <stop offset="1" stop-color="#15243a"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#93a9c6" opacity=".12"/>
+    </pattern>
+    <linearGradient id="connection" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="272" rx="18" fill="url(#background)"/>
+  <rect width="1100" height="272" rx="18" fill="url(#grid)"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+    <text x="32" y="32" fill="#b9cbe0" font-size="11" font-weight="600" letter-spacing="2">WEB REFERENCE</text>
+    <text x="654" y="32" fill="#b9cbe0" font-size="11" font-weight="600" letter-spacing="2">EDITABLE WIDGET BLUEPRINT</text>
+    <rect x="32" y="48" width="414" height="180" rx="10" fill="#f7fafc"/>
+    <path d="M42 48H436Q446 48 446 58V78H32V58Q32 48 42 48Z" fill="#e5edf5"/>
+    <circle cx="49" cy="63" r="3.5" fill="#fb7185"/>
+    <circle cx="62" cy="63" r="3.5" fill="#fbbf24"/>
+    <circle cx="75" cy="63" r="3.5" fill="#34d399"/>
+    <rect x="142" y="56" width="194" height="14" rx="4" fill="#f7fafc"/>
+    <text x="239" y="66.5" text-anchor="middle" fill="#64748b" font-size="9">ui-reference / index.html</text>
+    <rect x="47" y="93" width="68" height="118" rx="6" fill="#e9f0f6"/>
+    <rect x="59" y="105" width="44" height="6" rx="3" fill="#89a2ba"/>
+    <rect x="55" y="126" width="52" height="18" rx="4" fill="#d0e9e5"/>
+    <rect x="61" y="133" width="32" height="4" rx="2" fill="#178a7b"/>
+    <rect x="61" y="155" width="36" height="4" rx="2" fill="#aabaca"/>
+    <rect x="61" y="175" width="28" height="4" rx="2" fill="#aabaca"/>
+    <rect x="130" y="95" width="118" height="10" rx="4" fill="#273d56"/>
+    <rect x="130" y="113" width="176" height="5" rx="2.5" fill="#b6c5d3"/>
+    <rect x="130" y="133" width="140" height="53" rx="7" fill="#d3eeea"/>
+    <rect x="283" y="133" width="146" height="53" rx="7" fill="#e4edf8"/>
+    <rect x="143" y="145" width="24" height="24" rx="6" fill="#69b9ab"/>
+    <rect x="179" y="146" width="66" height="5" rx="2.5" fill="#609a92"/>
+    <rect x="179" y="158" width="45" height="4" rx="2" fill="#9dc8c0"/>
+    <rect x="297" y="146" width="80" height="5" rx="2.5" fill="#809fc5"/>
+    <rect x="297" y="158" width="57" height="4" rx="2" fill="#afc2da"/>
+    <rect x="355" y="198" width="74" height="16" rx="8" fill="#178a7b"/>
+    <text x="392" y="209.5" text-anchor="middle" fill="#fff" font-size="9" font-weight="600">Continue</text>
+    <path d="M464 137H636" stroke="url(#connection)" stroke-width="2"/>
+    <path d="M629 132L636 137L629 142" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="488" y="119" width="124" height="36" rx="18" fill="#20394e" stroke="#3c637d"/>
+    <text x="550" y="142" text-anchor="middle" fill="#e2f5ff" font-size="14" font-weight="600">H5 → UMG</text>
+    <text x="550" y="180" text-anchor="middle" fill="#a3b9d0" font-size="11">Native · Editable</text>
+    <rect x="654" y="48" width="414" height="180" rx="10" fill="#1e2b40" stroke="#3a4d65"/>
+    <path d="M664 48H1058Q1068 48 1068 58V78H654V58Q654 48 664 48Z" fill="#2b3c53"/>
+    <circle cx="672" cy="63" r="4" fill="#60a5fa"/>
+    <text x="687" y="67" fill="#dce8f7" font-size="10" font-weight="600">WBP / Designer</text>
+    <text x="667" y="96" fill="#8fa8c3" font-size="8.5" font-weight="600" letter-spacing="1">HIERARCHY</text>
+    <path d="M674 123V184M674 135H683M674 157H683M674 179H683" stroke="#4a617c" fill="none"/>
+    <text x="674" y="118" fill="#dce8f7" font-size="9">CanvasPanel</text>
+    <text x="687" y="138" fill="#abc0d8" font-size="9">Header</text>
+    <rect x="682" y="147" width="81" height="19" rx="3" fill="#2a5482"/>
+    <text x="687" y="160" fill="#e0efff" font-size="9">Content</text>
+    <text x="687" y="182" fill="#abc0d8" font-size="9">Button</text>
+    <path d="M776 88V216" stroke="#354b65"/>
+    <rect x="789" y="90" width="265" height="124" rx="5" fill="#f7fafc"/>
+    <rect x="799" y="100" width="39" height="104" rx="4" fill="#e9f0f6"/>
+    <rect x="806" y="111" width="25" height="4" rx="2" fill="#89a2ba"/>
+    <rect x="803" y="128" width="31" height="12" rx="3" fill="#d0e9e5"/>
+    <rect x="808" y="133" width="19" height="3" rx="1.5" fill="#178a7b"/>
+    <rect x="808" y="151" width="20" height="3" rx="1.5" fill="#aabaca"/>
+    <rect x="808" y="168" width="16" height="3" rx="1.5" fill="#aabaca"/>
+    <rect x="849" y="103" width="88" height="7" rx="3" fill="#273d56"/>
+    <rect x="849" y="116" width="124" height="4" rx="2" fill="#b6c5d3"/>
+    <rect x="849" y="133" width="89" height="43" rx="5" fill="#d3eeea"/>
+    <rect x="947" y="133" width="94" height="43" rx="5" fill="#e4edf8"/>
+    <rect x="858" y="143" width="17" height="17" rx="4" fill="#69b9ab"/>
+    <rect x="883" y="145" width="41" height="4" rx="2" fill="#609a92"/>
+    <rect x="883" y="155" width="29" height="3" rx="1.5" fill="#9dc8c0"/>
+    <rect x="957" y="144" width="57" height="4" rx="2" fill="#809fc5"/>
+    <rect x="957" y="155" width="39" height="3" rx="1.5" fill="#afc2da"/>
+    <rect x="844" y="128" width="202" height="53" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <g fill="#fff" stroke="#3b82f6" stroke-width="1.2">
+      <rect x="841" y="125" width="6" height="6"/>
+      <rect x="1043" y="125" width="6" height="6"/>
+      <rect x="841" y="178" width="6" height="6"/>
+      <rect x="1043" y="178" width="6" height="6"/>
+    </g>
+    <rect x="989" y="190" width="52" height="13" rx="6.5" fill="#178a7b"/>
+    <text x="1015" y="199.4" text-anchor="middle" fill="#fff" font-size="7">Continue</text>
+    <text x="32" y="250" fill="#96adc6" font-size="10" letter-spacing=".5">HTML · CSS · JAVASCRIPT</text>
+    <text x="1068" y="250" text-anchor="end" fill="#96adc6" font-size="10" letter-spacing=".5">UNREAL ENGINE 5 · UMG</text>
+  </g>
+</svg>

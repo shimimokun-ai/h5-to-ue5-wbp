@@ -1,23 +1,28 @@
-# H5 to UE5 WBP
+<h1 align="center">H5 → UE5 WBP</h1>
 
-**简体中文** | [English](README.en.md)
+<p align="center">
+  <strong>把 Web 界面，还原成原生、可编辑的 Unreal UI。</strong><br>
+  <sub>面向 Codex 的 H5 → UMG 工作流 · 布局 · 交互 · 视觉细节</sub>
+</p>
 
-将 HTML / CSS / JavaScript 界面参考还原为原生、可编辑的 Unreal Engine 5 UMG Widget Blueprint 的 Codex Skill。
+<p align="center">
+  <a href="README.md"><img src="docs/assets/lang-zh-active.svg" alt="简体中文 · 当前语言" width="116" height="32"></a>
+  &nbsp;
+  <a href="README.en.md"><img src="docs/assets/lang-en.svg" alt="Read in English" width="116" height="32"></a>
+</p>
 
-This Codex skill guides the conversion of an HTML/CSS/JavaScript UI reference into an editable, native Unreal Engine 5 UMG Widget Blueprint. It covers layout, assets, interaction states, project integration, DPI, animation, and evidence-based validation.
+<p align="center">
+  <a href="#快速开始">快速开始</a> &nbsp;·&nbsp;
+  <a href="#适用场景">适用场景</a> &nbsp;·&nbsp;
+  <a href="#使用示例">使用示例</a> &nbsp;·&nbsp;
+  <a href="#文件结构">参考文档</a>
+</p>
 
-## 适用场景
+<p align="center">
+  <img src="docs/assets/readme-banner.svg" alt="流程示意：从 Web 界面参考，到拥有可编辑控件层级的原生 UMG 界面。" width="100%">
+</p>
 
-- 根据 H5 源码还原 UE5 界面，保留可在 WBP Designer 中调整的布局和样式。
-- 对已有 UMG 界面进行视觉对齐，排查圆角、透明边缘、模糊、滚动、DPI 和动画问题。
-- 将界面接入项目已有的 C++、Blueprint 或 TS/PuerTS 数据和交互逻辑。
-- 区分源码检查、编译、资源保存、运行时验证与用户视觉验收，按实际证据交付。
-
-这是提供给 Codex 的工作流程与参考资料，不是 Unreal Engine 插件，也不是无需项目适配的一键转换器。默认生成原生 UMG；只有明确要求时才考虑 Web Browser 嵌入。
-
-## 安装
-
-### 通过 Codex 安装
+## 快速开始
 
 在 Codex 中输入：
 
@@ -26,7 +31,8 @@ This Codex skill guides the conversion of an HTML/CSS/JavaScript UI reference in
 仓库中的路径：skills/h5-to-ue5-wbp
 ```
 
-### 手动安装
+<details>
+<summary><strong>手动安装与更新</strong></summary>
 
 下载或克隆本仓库，将 `skills/h5-to-ue5-wbp` 整个文件夹复制到 Codex 的 skills 目录。
 
@@ -35,6 +41,16 @@ This Codex skill guides the conversion of an HTML/CSS/JavaScript UI reference in
 - 如果设置了 `CODEX_HOME`：使用该目录下的 `skills/h5-to-ue5-wbp`
 
 保留 `agents` 和 `references` 子目录。若目标位置已经存在同名 Skill，请先检查本地修改，再决定是否更新。
+
+</details>
+
+## 适用场景
+
+| 可编辑的布局 | 原生的交互 | 可核查的结果 |
+| :--- | :--- | :--- |
+| 根据 HTML / CSS / JavaScript 参考还原 UMG，保留 WBP Designer 中可调整的布局与样式。 | 接入已有 C++、Blueprint 或 TS/PuerTS 逻辑，保留真实数据、输入和页面行为。 | 分别报告源码、编译、资源保存、运行时检查与用户视觉验收。 |
+
+也适用于已有 UMG 界面的视觉对齐：圆角、透明边缘、模糊、滚动、DPI 和动画问题，都有对应的参考指引。
 
 ## 使用示例
 
@@ -79,6 +95,8 @@ skills/h5-to-ue5-wbp/
 - [验证与交付](skills/h5-to-ue5-wbp/references/validation-and-delivery.md)：验证层级、运行时检查和准确提交。
 
 ## 环境与验证边界
+
+这是提供给 Codex 的工作流程与参考资料，不是 Unreal Engine 插件或无需项目适配的一键转换器。默认使用原生 UMG，只有明确要求时才考虑 Web Browser 嵌入。顶部配图是流程示意。
 
 实际转换需要可访问的 H5 源码、目标 Unreal 项目以及与任务相符的编辑和构建能力。应以目标项目使用的 UE 版本和工作流程为准。
 
