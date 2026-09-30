@@ -1,0 +1,4 @@
+interface:
+  display_name: "H5 to UE5 WBP"
+  short_description: "Rebuild H5 references as editable native UE5 Widget Blueprints"
+  default_prompt: "Use $h5-to-ue5-wbp to reproduce this H5 reference as an editable UE5 WBP and verify it across target resolutions."
